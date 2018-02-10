@@ -18,8 +18,8 @@ from django.contrib import admin
 from stores.views import home
 
 urlpatterns = [
-    url(r'^$', home),
-    url(r'^admin/', include(admin.site.urls)),
+    path('', home),
+    path('admin/', admin.site.urls),
 ]
 ```
 
@@ -78,7 +78,7 @@ def home(request):
     把 `lunch/urls.py` 中 `home` 的那行修改成下面這樣：
 
     ```python
-    url(r'^$', home, name='home'),
+    path('', home, name='home'),
     ```
 
 2. 用這個 name 來 refer 我們要的 URL：

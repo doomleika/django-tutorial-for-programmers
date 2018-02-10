@@ -97,11 +97,11 @@ python manage.py dbshell
 
 ```
 sqlite> .tables
-auth_group                  django_admin_log          
-auth_group_permissions      django_content_type       
-auth_permission             django_migrations         
-auth_user                   django_session            
-auth_user_groups            stores_menuitem           
+auth_group                  django_admin_log
+auth_group_permissions      django_content_type
+auth_permission             django_migrations
+auth_user                   django_session
+auth_user_groups            stores_menuitem
 auth_user_user_permissions  stores_store
 ```
 

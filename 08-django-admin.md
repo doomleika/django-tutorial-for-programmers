@@ -18,10 +18,10 @@ INSTALLED_APPS = [
 
 ```python
 urlpatterns = [
-    url(r'^$', home, name='home'),
+    path('', home, name='home'),
 
     # 這一行把 admin/ 下面的 URL 對應到 Django admin。
-    url(r'^admin/', include(admin.site.urls)),
+    path('admin/', admin.site.urls),
 ]
 ```
 
@@ -107,6 +107,8 @@ class StoreAdmin(admin.ModelAdmin):
 ```
 
 進入一個 `Store` 的 admin 頁面看看。那家店的菜單變成一個表格被列在下面，而且 Django 還多給你一個空白列，讓你可以繼續新增！方便多了吧。
+
+![](assets/django-admin-store-inline-menu.png)
 
 多多新增一些資料。之後會教你怎麼把這些東西列在網頁上給一般人看。
 
